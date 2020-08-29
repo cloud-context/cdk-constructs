@@ -1,6 +1,5 @@
 {
-  "name": "root",
-  "private": true,
+  "name": "@cloud-context/cdk-constructs",
   "devDependencies": {
     "@commitlint/cli": "^9.1.2",
     "@commitlint/config-conventional": "^9.1.2",
@@ -12,5 +11,10 @@
   },
   "scripts": {
     "test:watch": "jest --ci --watchAll --maxWorkers=6"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
