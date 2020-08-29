@@ -1,20 +1,39 @@
 {
   "name": "@cloud-context/cdk-constructs",
-  "devDependencies": {
-    "@commitlint/cli": "^9.1.2",
-    "@commitlint/config-conventional": "^9.1.2",
-    "@types/node": "^14.6.0",
-    "aws-cdk": "^1.60.0",
-    "husky": "^4.2.5",
-    "standard-version": "^9.0.0",
-    "jest": "^26.4.2"
-  },
   "scripts": {
-    "test:watch": "jest --ci --watchAll --maxWorkers=6"
+    "test": "jest",
+    "test:watch": "jest --ci --watchAll --maxWorkers=6",
+    "lint": "eslint . --ext .ts",
+    "prettier-format": "prettier --config .prettierrc 'lib/**/*.ts' --write"
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "^1.61.1",
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.2",
+    "@types/node": "^14.6.0",
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "^3.10.1",
+    "aws-cdk": "^1.61.1",
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "jest": "^26.4.2",
+    "prettier": "^2.1.1",
+    "standard-version": "^9.0.0",
+    "ts-jest": "^26.3.0",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-lambda": "^1.61.1",
+    "@aws-cdk/aws-lambda-event-sources": "^1.61.1",
+    "@aws-cdk/aws-route53": "^1.61.1",
+    "@aws-cdk/aws-sqs": "^1.61.1",
+    "@aws-cdk/core": "^1.61.1"
   }
 }
