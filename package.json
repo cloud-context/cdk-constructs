@@ -4,7 +4,8 @@
     "test": "jest",
     "test:watch": "jest --ci --watchAll --maxWorkers=6",
     "lint": "eslint . --ext .ts",
-    "prettier-format": "prettier --config .prettierrc 'lib/**/*.ts' --write"
+    "prettier-format": "prettier --config .prettierrc 'lib/**/*.ts' --write",
+    "release": "standard-version"
   },
   "husky": {
     "hooks": {
