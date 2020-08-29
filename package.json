@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.2",
+    "@types/node": "^14.6.0",
+    "aws-cdk": "^1.60.0",
+    "husky": "^4.2.5",
+    "standard-version": "^9.0.0",
+    "jest": "^26.4.2"
+  },
+  "scripts": {
+    "test:watch": "jest --ci --watchAll --maxWorkers=6"
+  }
+}
