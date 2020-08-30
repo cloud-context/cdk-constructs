@@ -1,5 +1,6 @@
 {
   "name": "@cloud-context/cdk-constructs",
+  "version": "0.1.1",
   "scripts": {
     "test": "jest",
     "test:watch": "jest --ci --watchAll --maxWorkers=6",
